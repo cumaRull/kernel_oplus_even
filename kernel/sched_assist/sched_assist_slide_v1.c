@@ -19,6 +19,7 @@ u64 ux_load_ts[NR_CPUS] = {0};
 int sysctl_slide_boost_enabled = 0;
 int sysctl_boost_task_threshold = 51;
 int sysctl_frame_rate = 60;
+void adjust_sched_assist_input_ctrl();
 
 void sched_assist_adjust_slide_param(unsigned int *maxtime) {
 /* Give each scene with default boost value */
